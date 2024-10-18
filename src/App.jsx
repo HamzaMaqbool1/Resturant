@@ -132,10 +132,10 @@ function App() {
  
   return (
     <>
-    <Router>
+    <Router basename='/Resturant/'>
       <Header/>
-      <Home/>
       <Routes>
+      <Route path='/' element={<Home/>}></Route>
         <Route path='/menu' element={<Menu/>}></Route>
         <Route path='/menu/:index' element={<ProductDetail/>}></Route>
         <Route path='/franchise' element={<Franchise/>}></Route>
